@@ -1,0 +1,19 @@
+{
+  "name": "p3_barbosalusitano_geoffrey",
+  "version": "1.0.0",
+  "description": "projet 3 OC",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geoffrey-lusitano/P3_barbosalusitano_geoffrey.git"
+  },
+  "author": "GeoCITW",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geoffrey-lusitano/P3_barbosalusitano_geoffrey/issues"
+  },
+  "homepage": "https://github.com/Geoffrey-lusitano/P3_barbosalusitano_geoffrey#readme"
+}
