@@ -1,0 +1,33 @@
+.btn {
+    box-shadow: 3px 4px 0px 0px $grey-color;
+	background:linear-gradient(to bottom, $secondary-color 5%, $primary-color 100%);
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:white;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+    &:hover {
+        background:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
+	    background-color:#bab1ba;
+    }
+    &:active {
+        position:relative;
+        top:1px;
+    }
+}
+.btn--basic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow:inset 0px 1px 0px 0px #ffffff96;
+	background-color:$grey-color;
+	border-radius:15px;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}

@@ -1,0 +1,50 @@
+body {
+    width: 375px;
+    margin: 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+// 
+.location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 0 7px 0;
+    background-color: $grey-color;
+    border-top: 2px solid grey;
+    i {
+        margin-right: 20px;
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+    p {
+        font-weight: 700;
+    }
+}
+// 
+.reservation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey-color-low;
+    padding: 40px 10px 40px 10px;
+    h1 {
+        margin: 0 20px 0 20px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    
+}
+// 
+.functioning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
