@@ -4,11 +4,24 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: sans-serif;
+  margin: 0;
+}
+
+h6 {
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
 }
 
 h1 {
   font-size: 22px;
   font-weight: 800;
+}
+
+p {
+  margin: 0;
 }
 
 .btn {
@@ -49,6 +62,13 @@ h1 {
 .footer__content {
   display: flex;
   flex-direction: column;
+  background-color: #363434;
+}
+.footer__content img {
+  color: white;
+}
+.footer__content i, .footer__content p {
+  color: white;
 }
 
 .logo {
@@ -62,7 +82,6 @@ h1 {
 }
 
 body {
-  width: 375px;
   margin: 0;
 }
 
@@ -108,8 +127,79 @@ main {
 .functioning {
   display: flex;
   flex-direction: column;
+  padding: 5px 10px 30px 15px;
+}
+.functioning h1 {
+  padding: 30px 0 15px 15px;
+}
+.functioning .functioning__listing {
+  display: flex;
+  flex-direction: column;
+}
+.functioning .functioning__listing .functioning__section {
   justify-content: center;
+  margin-bottom: 10px;
+}
+.functioning .functioning__listing .functioning__section i {
+  padding: 10px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(241, 238, 238, 0.5);
+}
+.restaurant h1 {
+  padding: 30px 0 15px 15px;
+}
+.restaurant .restaurant__listing {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.thumbnail {
+  border-radius: 15px;
+  background-color: white;
+  margin: 10px;
+}
+.thumbnail img {
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 215px;
+}
+
+.thumbnail__content {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.thumbnail__content .text {
+  margin-left: 10px;
+}
+.thumbnail__content .text h3 {
+  margin-top: 10px;
+}
+.thumbnail__content .text p {
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+.thumbnail__content i {
+  font-size: 24px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.new {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
