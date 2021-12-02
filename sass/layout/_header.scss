@@ -2,8 +2,14 @@
 .logo {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 15px 0 15px 0;
 }
 .logo > img {
     width: 180px;
+}
+#retour {
+    position: relative;
+    right: 60px;
+    font-size: 20px;
 }

@@ -33,11 +33,12 @@ main {
     background-color: $grey-color-low;
     padding: 40px 10px 40px 10px;
     h1 {
-        margin: 0 20px 0 20px;
+        margin: 0 20px 5px 20px;
         text-align: center;
     }
     p {
         text-align: center;
+        margin: 5px 0 20px 0;
     }
     
 }
@@ -47,7 +48,7 @@ main {
     flex-direction: column;
     padding: 5px 10px 30px 15px;
     h1 {
-        padding: 30px 0 15px 15px;
+        padding: 30px 0 15px 0;
     }
     .functioning__listing {
         display: flex;
@@ -57,6 +58,10 @@ main {
             margin-bottom: 10px;
             i {
                 padding: 10px;
+                color: grey;
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
 
@@ -67,8 +72,8 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     background-color: $grey-color-low;
+    padding: 10px 5px 50px 5px;
     h1 {
         padding: 30px 0 15px 15px;
     }
