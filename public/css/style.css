@@ -311,14 +311,12 @@ a {
 .new {
   display: flex;
   justify-content: center;
-  position: relative;
-  float: right;
-  top: -205px;
-  right: 10px;
   background-color: #99E2D0;
   width: 80px;
   padding: 5px;
   border-radius: 2px;
+  transform: translate(245px, -200px);
+  margin: 0;
 }
 
 .restaurant__page {
