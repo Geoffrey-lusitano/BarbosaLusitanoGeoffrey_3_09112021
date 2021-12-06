@@ -1,0 +1,37 @@
+.loader {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+}
+.loader-quart {
+    border-radius: 50px;
+    border: 6px solid rgba(255, 255, 255, .4);
+    border-top-color: $primary-color;
+    border-bottom-color: $secondary-color;
+    animation: spin 1s linear 0s 3;
+}
+.loader-quart::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: $primary-color;
+    border-bottom-color: $secondary-color;
+    opacity: 0.8;
+    animation: spinreverse 2s linear 0s 1;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+@keyframes spinreverse {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}

@@ -2,6 +2,10 @@ body {
 
     margin: 0;
 }
+.section {
+    height: 100%;
+    text-align: center;
+}
 main {
     display: flex;
     flex-direction: column;
@@ -46,22 +50,30 @@ main {
 .functioning {
     display: flex;
     flex-direction: column;
-    padding: 5px 10px 30px 15px;
+    padding: 5px 15px 30px 15px;
     h1 {
         padding: 30px 0 15px 0;
     }
     .functioning__listing {
         display: flex;
         flex-direction: column;
+        padding: 0 10px 5px 10px;
         .functioning__section {
-            justify-content: center;
-            margin-bottom: 10px;
-            i {
-                padding: 10px;
-                color: grey;
-                &:hover {
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            &:hover {
+                background-color: $primary-color-bacground;
+                i {
                     color: $primary-color;
-                }
+                } 
+            }
+            i {
+                font-size: 20px;
+                padding: 20px;
+                color: grey;
+            }
+            p {
+                margin-left: 5px; 
             }
         }
 
@@ -120,8 +132,26 @@ a {
         font-size: 24px;
         margin-right: 20px;
         margin-top: 20px;
+        color: white;
+        cursor: pointer;
+        text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+        &:hover {
+            color: $primary-color;
+        }
+        &:active {
+            color: $primary-color;
+        }
     }
 }
 .new {
-    display: none;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    float: right;
+    top: -205px;
+    right: 10px;
+    background-color: $tertiary-color;
+    width: 80px;
+    padding: 5px;
+    border-radius: 2px;
 }
