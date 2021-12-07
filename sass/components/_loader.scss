@@ -35,3 +35,22 @@
     0% { transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
 }
+.section {
+
+    animation-name: loader-depop;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loader-depop {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+         opacity: 0;
+    }
+}

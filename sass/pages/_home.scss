@@ -3,8 +3,14 @@ body {
     margin: 0;
 }
 .section {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
+    width: 100%;
     text-align: center;
+    background-color: white;
 }
 main {
     display: flex;
@@ -59,6 +65,7 @@ main {
         flex-direction: column;
         padding: 0 10px 5px 10px;
         .functioning__section {
+            position: relative;
             justify-content: flex-start;
             margin-bottom: 20px;
             &:hover {
@@ -78,6 +85,15 @@ main {
         }
 
     }
+}
+.span {
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: $primary-color;
 }
 // 
 .restaurant {
@@ -106,6 +122,7 @@ a {
     border-radius: 15px;
     background-color: white;
     margin: 10px;
+    position: relative;
     img {
         object-fit: cover;
         border-radius: 15px 15px 0 0;
@@ -134,12 +151,21 @@ a {
         margin-top: 20px;
         color: white;
         cursor: pointer;
+        background-clip: text;
+        -webkit-background-clip: text;
         text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+
         &:hover {
-            color: $primary-color;
+            background-image:linear-gradient(to bottom, $secondary-color 5%, $primary-color 100%);
+            color: transparent;
+            text-shadow: none;
+            
+            
         }
         &:active {
-            color: $primary-color;
+            background-image:linear-gradient(to bottom, $secondary-color 5%, $primary-color 100%);
+            color: transparent;
+            text-shadow: none;
         }
     }
 }
@@ -149,7 +175,10 @@ a {
     background-color: $tertiary-color;
     width: 80px;
     padding: 5px;
+    top: 10px;
+    right: 10px ;
     border-radius: 2px;
-    transform: translate(245px, -200px);
+    //transform: translate(-15%, -55%);
     margin: 0;
+    position: absolute;
 }
