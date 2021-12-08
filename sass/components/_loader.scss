@@ -37,19 +37,22 @@
 }
 .section {
     animation-name: loader-depop;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 @keyframes loader-depop {
     0% {
+        width: 100%;
         opacity: 1;
     }
     80% {
-        opacity: 1;
+        width: 100%;
+        opacity: 0;
     }
     100% {
-         opacity: 0;
+        width: 0%;
+        opacity: 0;
     }
 }
