@@ -101,7 +101,7 @@ p {
 }
 .section {
   animation-name: loader-depop;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -402,7 +402,7 @@ a {
   font-size: 14px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .functioning__listing {
     flex-direction: row !important;
   }
@@ -421,9 +421,9 @@ a {
     width: 300px;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
   body {
-    max-width: 992px;
+    max-width: 1080px;
     margin: auto;
   }
 
@@ -443,7 +443,7 @@ a {
   }
 
   .thumbnail {
-    width: 400px;
+    width: 300px;
   }
 }
 .restaurant__page {
@@ -462,8 +462,6 @@ a {
 }
 .restaurant__page .restaurant__name i {
   font-size: 24px;
-  margin-right: 20px;
-  margin-top: 20px;
   color: #f1eeee;
   background-clip: text;
   -webkit-background-clip: text;
@@ -623,6 +621,34 @@ a {
   display: flex;
   justify-content: center;
   padding: 40px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .items .items__content h3 {
+    width: 400px;
+  }
+
+  .items__infos .descrip {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurant__page .restaurant__name {
+    justify-content: center;
+  }
+  .restaurant__page .restaurant__name i {
+    padding-left: 30px;
+  }
+
+  .entrees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .items__infos .descrip {
+    width: 400px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

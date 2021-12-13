@@ -13,8 +13,6 @@
         padding: 20px 25px 20px 15px;
         i {
             font-size: 24px;
-            margin-right: 20px;
-            margin-top: 20px;
             color: $grey-color;
             background-clip: text;
             -webkit-background-clip: text;
@@ -179,4 +177,51 @@
     display: flex;
     justify-content: center;
     padding: 40px;
+}
+
+//  tablette
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .items {
+        .items__content {
+            h3 {
+                width: 400px;
+            }
+        }
+    }
+    
+    .items__infos {
+        .descrip {
+            width: 400px;
+        }
+
+    }
+}
+
+// desktop 
+@media screen and (min-width:1024px) {
+    .restaurant__page {
+        .restaurant__name {
+            justify-content: center;
+            i {
+                padding-left: 30px;
+            }
+        }
+
+    }
+    .menu {
+
+
+    }
+    .entrees {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .items__infos {
+        .descrip {
+            width: 400px;
+        }
+
+    }
+
 }
