@@ -36,6 +36,12 @@ p {
   font-size: 14px;
   font-weight: normal;
 }
+.menu h3 {
+  font-size: 17px;
+}
+.menu p {
+  font-size: 14px;
+}
 
 .btn {
   font-size: 14px;
@@ -130,6 +136,7 @@ p {
 .btn:active {
   position: relative;
   top: 1px;
+  filter: brightness(1.25);
   box-shadow: 7px 7px 5px #b1aeae;
 }
 
@@ -165,6 +172,13 @@ p {
   padding-left: 15px;
   padding-bottom: 5px;
   color: white;
+}
+.footer__content i {
+  font-size: 13px;
+  width: 10px;
+}
+.footer__content .fa-hands-helping {
+  font-size: 11px;
 }
 
 .logo {
@@ -298,7 +312,7 @@ main {
   padding: 10px 5px 50px 5px;
 }
 .restaurant h1 {
-  padding: 30px 0 15px 15px;
+  padding: 30px 0 15px 10px;
 }
 .restaurant .restaurant__listing {
   display: flex;
@@ -349,6 +363,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  cursor: pointer;
 }
 .thumbnail__content i:hover {
   transition: all 0.5s linear 0s;
@@ -357,6 +372,12 @@ a {
   text-shadow: none;
 }
 .thumbnail__content i:active {
+  transition: all 0.5s linear 0s;
+  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  color: transparent;
+  text-shadow: none;
+}
+.thumbnail__content i:visited {
   transition: all 0.5s linear 0s;
   background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
   color: transparent;
@@ -381,6 +402,50 @@ a {
   font-size: 14px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .functioning__listing {
+    flex-direction: row !important;
+  }
+  .functioning__listing .functioning__section {
+    margin: 15px;
+  }
+
+  .restaurant .restaurants__listing {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 992px;
+    margin: auto;
+  }
+
+  .functioning__listing {
+    justify-content: space-around;
+    flex-direction: row !important;
+  }
+  .functioning__listing .functioning__section {
+    margin: 15px;
+  }
+
+  .restaurant .restaurants__listing {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .thumbnail {
+    width: 400px;
+  }
+}
 .restaurant__page {
   display: flex;
   flex-direction: column;
@@ -396,7 +461,32 @@ a {
   padding: 20px 25px 20px 15px;
 }
 .restaurant__page .restaurant__name i {
-  font-size: 20px;
+  font-size: 24px;
+  margin-right: 20px;
+  margin-top: 20px;
+  color: #f1eeee;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  cursor: pointer;
+}
+.restaurant__page .restaurant__name i:hover {
+  transition: all 0.5s linear 0s;
+  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  color: transparent;
+  text-shadow: none;
+}
+.restaurant__page .restaurant__name i:active {
+  transition: all 0.5s linear 0s;
+  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  color: transparent;
+  text-shadow: none;
+}
+.restaurant__page .restaurant__name i:focus {
+  transition: all 0.5s linear 0s;
+  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  color: transparent;
+  text-shadow: none;
 }
 
 .restaurant__picture img {
@@ -460,6 +550,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+.items .items__content h3 {
+  width: 280px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .items:hover .check {
   transition: transform;
   transition-duration: 3s;
@@ -498,8 +594,15 @@ a {
   flex-direction: row;
   justify-content: space-between;
 }
+.items__infos .descrip {
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .items__infos .prix {
   font-weight: bold;
+  padding: 0 5px 0 10px;
 }
 
 .check {

@@ -112,7 +112,7 @@ main {
     background-color: $grey-color-low;
     padding: 10px 5px 50px 5px;
     h1 {
-        padding: 30px 0 15px 15px;
+        padding: 30px 0 15px 10px;
     }
     .restaurant__listing {
         display: flex;
@@ -163,7 +163,7 @@ a {
         background-clip: text;
         -webkit-background-clip: text;
         text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-
+        cursor: pointer;
         &:hover {
             transition: all 0.5s linear 0s;
             background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
@@ -171,6 +171,12 @@ a {
             text-shadow: none;
         }
         &:active {
+            transition: all 0.5s linear 0s;
+            background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
+            color: transparent;
+            text-shadow: none;
+        }
+        &:visited {
             transition: all 0.5s linear 0s;
             background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
             color: transparent;
@@ -194,5 +200,56 @@ a {
         font-weight: 600;
         color: $tertiary-color-p;
         font-size: 14px;
+    }
+}
+
+//  tablette
+@media screen and (min-width:768px) and (max-width:991px) {
+    .functioning__listing {
+        flex-direction: row !important;
+        .functioning__section {
+            margin: 15px;
+        }
+    }
+    .restaurant {
+        .restaurants__listing {
+            display: flex;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .thumbnail {
+        width: 300px;
+    }
+
+    
+}
+
+// desktop 
+@media screen and (min-width:992px) {
+    body {
+        max-width: 992px;
+        margin: auto;
+    }
+    .functioning__listing {
+        justify-content: space-around;
+        flex-direction: row !important;
+        .functioning__section {
+            margin: 15px;
+        }
+    }
+    .restaurant {
+        .restaurants__listing {
+            display: flex;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+        }
+    }
+    .thumbnail {
+        width: 400px;
     }
 }
