@@ -44,6 +44,7 @@
     img {
         object-fit: cover;
         width: 100%;
+        max-height: 250px;
     }
 }
 
@@ -181,7 +182,21 @@
 
 //  tablette
 @media screen and (min-width:768px) and (max-width:1023px) {
+    .restaurant__picture {
+    
+        img {
+            max-height: 530px;
+        }
+    }
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .items {
+        width: 500px;
         .items__content {
             h3 {
                 width: 400px;
@@ -208,15 +223,27 @@
         }
 
     }
-    .menu {
-
-
+    .restaurant__picture {
+    
+        img {
+            max-height: 530px;
+        }
     }
-    .entrees {
+    .menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
+    .items {
+        width: 500px;
+        .items__content {
+            h3 {
+                width: 400px;
+            }
+        }
+    }
+
     .items__infos {
         .descrip {
             width: 400px;
