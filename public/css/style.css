@@ -474,20 +474,20 @@ a {
   cursor: pointer;
 }
 .restaurant__page .restaurant__name i:hover {
-  transition: all 0.5s linear 0s;
-  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
-  color: transparent;
   text-shadow: none;
+  transition: all 1s cubic-bezier(0, 1.55, 0.56, 0.74);
+  background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  color: transparent;
 }
 .restaurant__page .restaurant__name i:active {
-  transition: all 0.5s linear 0s;
-  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  transition: all 1s cubic-bezier(0, 1.55, 0.56, 0.74) s;
+  background-image: linear-gradient(to top, #9356DC 1%, #FF79DA 100%);
   color: transparent;
   text-shadow: none;
 }
-.restaurant__page .restaurant__name i:focus {
-  transition: all 0.5s linear 0s;
-  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+.restaurant__page .restaurant__name i:visited {
+  transition: all 1s cubic-bezier(0, 1.55, 0.56, 0.74);
+  background-image: linear-gradient(to top, #9356DC 1%, #FF79DA 100%);
   color: transparent;
   text-shadow: none;
 }
@@ -535,6 +535,14 @@ a {
   opacity: 0;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .list {
   transition: 0.3s;
 }
@@ -566,19 +574,24 @@ a {
   transition-duration: 1s;
   transform: translateX(0%);
   opacity: 1;
-  width: 20%;
+  animation: width_check 2s;
 }
 .items:hover i {
   transition-property: transform;
   transition-duration: 1s;
   transform: rotate(360deg);
 }
+.items:hover .prix {
+  transition: transform;
+  transition-duration: 2s;
+  transform: translateX(-20%);
+}
 .items:active .check {
   transition: transform;
   transition-duration: 1s;
   transform: translateX(0%);
   opacity: 1;
-  width: 20%;
+  animation: width_check 2s;
 }
 .items:active i {
   transition-property: transform;
@@ -586,12 +599,12 @@ a {
   transform: rotate(360deg);
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
+@keyframes width_check {
+  0% {
+    width: 0;
   }
-  to {
-    opacity: 1;
+  100% {
+    width: 20%;
   }
 }
 .items__infos {

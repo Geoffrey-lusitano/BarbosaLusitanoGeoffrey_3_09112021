@@ -19,20 +19,20 @@
             text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
             cursor: pointer;
             &:hover {
-                transition: all 0.5s linear 0s;
-                background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
-                color: transparent;
                 text-shadow: none;
+                transition: all 1s cubic-bezier(0,1.55,.56,.74);
+                background-image:linear-gradient(to top, $primary-color 0%, $secondary-color 100%);
+                color: transparent;
             }
             &:active {
-                transition: all 0.5s linear 0s;
-                background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
+                transition: all 1s cubic-bezier(0,1.55,.56,.74)s;
+                background-image:linear-gradient(to top, $primary-color 1%, $secondary-color 100%);
                 color: transparent;
                 text-shadow: none;
             }
-            &:focus {
-                transition: all 0.5s linear 0s;
-                background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
+            &:visited {
+                transition: all 1s cubic-bezier(0,1.55,.56,.74);
+                background-image:linear-gradient(to top, $primary-color 1%, $secondary-color 100%);
                 color: transparent;
                 text-shadow: none;
             }
@@ -82,6 +82,14 @@
     animation-fill-mode: forwards;
     opacity: 0;
 }
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .list {
     transition: .3s;
 }
@@ -114,12 +122,17 @@
             transition-duration: 1s;
             transform: translateX(0%);
             opacity: 1;
-            width: 20%;
+            animation:  width_check 2s;
         }
         i {
             transition-property: transform;
             transition-duration: 1s;
             transform: rotate(360deg);
+        }
+        .prix {
+            transition: transform;
+            transition-duration: 2s;
+            transform: translateX(-20%);
         }
     }
     &:active {
@@ -128,7 +141,7 @@
             transition-duration: 1s;
             transform: translateX(0%);
             opacity: 1;
-            width: 20%;
+            animation:  width_check 2s;
         }
         i {
             transition-property: transform;
@@ -137,12 +150,12 @@
         }
     }
 }
-@keyframes fadein {
-    from {
-        opacity: 0;
+@keyframes width_check {
+    0% {
+        width: 0;
     }
-    to {
-        opacity: 1;
+    100% {
+        width: 20%;
     }
 }
 .items__infos {
