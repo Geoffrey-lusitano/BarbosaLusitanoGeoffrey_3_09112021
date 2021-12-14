@@ -21,7 +21,11 @@
     <main>
         <div class="restaurant__page">
             <div class="restaurant__picture">
-                <img src="public/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la francaise">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="public/img/phone/toa-heftiba-DQKerTsQwi0-unsplash-min.jpg">
+                    <source media="(min-width: 768px)" srcset="public/img/desktop/toa-heftiba-DQKerTsQwi0-unsplash-min.jpg" >
+                    <img src="public/img/phone/toa-heftiba-DQKerTsQwi0-unsplash-min.jpg" alt="À la francaise">
+                </picture>
             </div>
             <div class="restaurant__name">
                 <h1>À la francaise</h1>
@@ -148,7 +152,7 @@
             <a href="#"><i class="fas fa-utensils"></i> <p>Proposer un restaurant</p> </a>
             <a href="#"><i class="fas fa-hands-helping"></i> <p>Devenir partenaire</p> </a>
             <a href="#"> <p>Mentions légales</p> </a>
-            <a href="#"> <p>Contact</p> </a>
+            <a href="mailto:contact@ohmyfood.fr"> <p>Contact</p> </a>
         </div>
     </footer>
 </body>

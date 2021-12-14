@@ -101,7 +101,7 @@ p {
 }
 .section {
   animation-name: loader-depop;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -366,20 +366,20 @@ a {
   cursor: pointer;
 }
 .thumbnail__content i:hover {
-  transition: all 0.5s linear 0s;
-  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
-  color: transparent;
   text-shadow: none;
+  transition: all 1s cubic-bezier(0, 1.55, 0.56, 0.74);
+  background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  color: transparent;
 }
 .thumbnail__content i:active {
-  transition: all 0.5s linear 0s;
-  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  transition: all 1s cubic-bezier(0, 1.55, 0.56, 0.74) s;
+  background-image: linear-gradient(to top, #9356DC 1%, #FF79DA 100%);
   color: transparent;
   text-shadow: none;
 }
 .thumbnail__content i:visited {
-  transition: all 0.5s linear 0s;
-  background-image: linear-gradient(to bottom, #9356DC 5%, #FF79DA 100%);
+  transition: all 1s cubic-bezier(0, 1.55, 0.56, 0.74);
+  background-image: linear-gradient(to top, #9356DC 1%, #FF79DA 100%);
   color: transparent;
   text-shadow: none;
 }
@@ -422,7 +422,8 @@ a {
   }
 }
 @media screen and (min-width: 1024px) {
-  body {
+  .functioning {
+    min-width: 1070px;
     max-width: 1080px;
     margin: auto;
   }
@@ -435,6 +436,10 @@ a {
     margin: 15px;
   }
 
+  .restaurant {
+    max-width: 1080px;
+    margin: auto;
+  }
   .restaurant .restaurants__listing {
     display: flex;
     flex-direction: row !important;
@@ -543,6 +548,7 @@ a {
   padding: 10px;
   margin-bottom: 15px;
   box-shadow: 1px 3px 8px #b1aeae;
+  overflow: hidden;
 }
 .items .items__content {
   width: 100%;
@@ -557,7 +563,7 @@ a {
 }
 .items:hover .check {
   transition: transform;
-  transition-duration: 3s;
+  transition-duration: 1s;
   transform: translateX(0%);
   opacity: 1;
   width: 20%;

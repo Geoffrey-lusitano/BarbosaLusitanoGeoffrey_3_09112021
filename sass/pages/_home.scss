@@ -165,20 +165,20 @@ a {
         text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
         cursor: pointer;
         &:hover {
-            transition: all 0.5s linear 0s;
-            background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
-            color: transparent;
             text-shadow: none;
+            transition: all 1s cubic-bezier(0,1.55,.56,.74);
+            background-image:linear-gradient(to top, $primary-color 0%, $secondary-color 100%);
+            color: transparent;
         }
         &:active {
-            transition: all 0.5s linear 0s;
-            background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
+            transition: all 1s cubic-bezier(0,1.55,.56,.74)s;
+            background-image:linear-gradient(to top, $primary-color 1%, $secondary-color 100%);
             color: transparent;
             text-shadow: none;
         }
         &:visited {
-            transition: all 0.5s linear 0s;
-            background-image:linear-gradient(to bottom, $primary-color 5%, $secondary-color 100%);
+            transition: all 1s cubic-bezier(0,1.55,.56,.74);
+            background-image:linear-gradient(to top, $primary-color 1%, $secondary-color 100%);
             color: transparent;
             text-shadow: none;
         }
@@ -221,14 +221,13 @@ a {
     }
     .thumbnail {
         width: 300px;
-    }
-
-    
+    } 
 }
 
 // desktop 
 @media screen and (min-width:1024px) {
-    body {
+    .functioning {
+        min-width: 1070px;
         max-width: 1080px;
         margin: auto;
     }
@@ -240,13 +239,13 @@ a {
         }
     }
     .restaurant {
+        max-width: 1080px;
+        margin: auto;
         .restaurants__listing {
             display: flex;
             flex-direction: row !important;
             flex-wrap: wrap;
             justify-content: center;
-
-
         }
     }
     .thumbnail {

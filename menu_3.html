@@ -21,7 +21,11 @@
     <main>
         <div class="restaurant__page">
             <div class="restaurant__picture">
-                <img src="public/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="public/img/phone/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-min.jpg">
+                    <source media="(min-width: 768px)" srcset="public/img/desktop/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-min.jpg" >
+                    <img src="public/img/phone/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash-min.jpg" alt="Le délice des sens">
+                </picture>
             </div>
             <div class="restaurant__name">
                 <h1>Le délice des sens</h1>
@@ -148,7 +152,7 @@
             <a href="#"><i class="fas fa-utensils"></i> <p>Proposer un restaurant</p> </a>
             <a href="#"><i class="fas fa-hands-helping"></i> <p>Devenir partenaire</p> </a>
             <a href="#"> <p>Mentions légales</p> </a>
-            <a href="#"> <p>Contact</p> </a>
+            <a href="mailto:contact@ohmyfood.fr"> <p>Contact</p> </a>
         </div>
     </footer>
 </body>

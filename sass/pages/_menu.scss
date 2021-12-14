@@ -95,7 +95,7 @@
     padding: 10px;
     margin-bottom: 15px;
     box-shadow: 1px 3px 8px $ombre_color;
- 
+    overflow: hidden;
     .items__content {
         width: 100%;
         display: flex;
@@ -111,7 +111,7 @@
     &:hover {
         .check {
             transition: transform;
-            transition-duration: 3s;
+            transition-duration: 1s;
             transform: translateX(0%);
             opacity: 1;
             width: 20%;
